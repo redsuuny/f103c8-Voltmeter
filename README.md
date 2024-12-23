@@ -34,6 +34,22 @@ lcdceshioc/
 3. **注意事项**  
    - 设备每次测量电压时，精度为 0.01V，响应时间为 1 秒。
 
+
+该项目包含用于控制步进电机和LCD16x2显示屏的驱动程序，基于STM32微控制器。
+### `ECUAL/LCD16X2/LCD16X2.c`
+
+该文件包含用于控制LCD16x2显示屏的驱动程序函数，包括初始化、写字符、写字符串等功能。
+示例函数：
+void LCD16X2_Write_Char(uint8_t LCD16X2_Index, char Data);
+void LCD16X2_Write_String(uint8_t LCD16X2_Index, char *str);
+包含用于控制步进电机的驱动程序函数，包括初始化、设置速度、步进控制等功能。
+void STEPPERS_Init(void);
+void STEPPER_SetSpeed(uint8_t au8_STEPPER_Instance, uint16_t au16_RPM);
+void STEPPER_Step_Blocking(uint8_t au8_STEPPER_Instance, uint32_t au32_Steps, uint8_t au8_DIR);
+将项目导入到STM32CubeIDE中。
+根据硬件连接修改配置文件 STEPPER_cfg.h 和 LCD16X2_cfg.h。
+编译并下载程序到STM32微控制器。
+
 ## 开发环境
 - 硬件：STM32F103C8T6
 - 开发工具：Keil / STM32CubeIDE
