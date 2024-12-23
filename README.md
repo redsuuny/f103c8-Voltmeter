@@ -1,6 +1,4 @@
 ﻿# Voltmeter Project
-# Voltmeter Project
-
 ## 项目概述
 本项目是一个电压测量仪表，使用 A/D 转换器读取电压值，并在 LCD 屏幕上显示当前电压值（U）。该电压值保留小数点后两位。
 
