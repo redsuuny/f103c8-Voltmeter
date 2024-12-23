@@ -36,12 +36,12 @@ lcdceshioc/
 
 
 该项目包含用于控制步进电机和LCD16x2显示屏的驱动程序，基于STM32微控制器。
-### `ECUAL/LCD16X2/LCD16X2.c`
-
+LCD16X2.c
 该文件包含用于控制LCD16x2显示屏的驱动程序函数，包括初始化、写字符、写字符串等功能。
 示例函数：
 void LCD16X2_Write_Char(uint8_t LCD16X2_Index, char Data);
 void LCD16X2_Write_String(uint8_t LCD16X2_Index, char *str);
+STEPPER.c
 包含用于控制步进电机的驱动程序函数，包括初始化、设置速度、步进控制等功能。
 void STEPPERS_Init(void);
 void STEPPER_SetSpeed(uint8_t au8_STEPPER_Instance, uint16_t au16_RPM);
